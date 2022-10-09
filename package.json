@@ -1,0 +1,11 @@
+{
+  "name": "cypressautomationtravels",
+  "packageManager": "yarn@3.2.4",
+  "devDependencies": {
+    "cypress": "^10.9.0"
+  },
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
+  }
+}
