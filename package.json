@@ -2,6 +2,7 @@
   "name": "cypressautomationtravels",
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
+    "@faker-js/faker": "^7.5.0",
     "cypress": "^10.9.0"
   },
   "scripts": {
