@@ -10,11 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run E2E Tests
         uses: cypress-io/github-action@v4
         with:
-          browser: chrome
+          command-prefix: yarn dlx
+          config-file: cypress.config.cjs
           command: yarn cy:run
+          browser: chrome
