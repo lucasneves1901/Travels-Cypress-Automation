@@ -1,11 +1,13 @@
+.yarn
+.yarnrc.yml
 .yarn/*
-.yarn/cache
+.yarn/cache*
 .yarn/patches
 .yarn/plugins
 .yarn/releases
 .yarn/sdks
 .yarn/versions
-yarn.lock
+
 
 # Swap the comments on the following lines if you don't wish to use zero-installs
 # Documentation here: https://yarnpkg.com/features/zero-installs
@@ -20,3 +22,6 @@ cypress/reports
 
 # Mocha Reports
 mochawesome*
+
+# VSCode
+.editor*
