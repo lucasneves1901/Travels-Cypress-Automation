@@ -2,7 +2,8 @@
   "name": "cypressautomationtravels",
   "packageManager": "yarn@3.2.4",
   "devDependencies": {
-    "@faker-js/faker": "^7.5.0",
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "cypress": "10.10.0",
     "mocha": "^10.0.0",
     "mochawesome": "^7.1.3",
