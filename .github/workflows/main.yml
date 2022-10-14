@@ -23,6 +23,4 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v4.2.0
         with:
-          # we have already installed all dependencies above
-          install: false
           start: yarn cy:run
