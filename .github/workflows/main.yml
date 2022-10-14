@@ -1,22 +1,24 @@
-name: E2E Tests
+name: Cypress Tests
 
-on: 
-  push:
-    branches:
-      - 'master'
+on: [push]
 
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
+
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
-      - name: Cypress run E2E Tests
-        uses: cypress-io/github-action@v4
+      - name: Setup Node
+        uses: actions/setup-node@v2
         with:
-          command-prefix: yarn dlx
-          config-file: cypress.config.cjs
+          node-version: 16.13.2
+          cache: yarn
+      - name: Install packages
+        run: yarn install --frozen-lockfile
+      - name: Cypress run
+        uses: cypress-io/github-action@v4.2.0
+        with:
           command: yarn cy:run
-          browser: chrome
