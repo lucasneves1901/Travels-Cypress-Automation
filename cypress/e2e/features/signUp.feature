@@ -9,5 +9,5 @@ Feature: Sign Up
     When he goes to sign up page
     And the user entered valid credential
       | firstname | lastname | email_address         | password |
-      | Lucas     | Test     | testemail0@test.com | 9356LOL! |
+      | Lucas     | Test     | testemail000@test.com | 9356LOL! |
     Then a success message "Thank you for registering with Fake Online Clothing Store." should be displayed
